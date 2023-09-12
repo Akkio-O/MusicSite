@@ -12,7 +12,7 @@ app.use(cors()); // Добавляем middleware для обработки CORS
 var con = mysql.createConnection({
   host: "localhost",
   user: "root",
-  password: "jeka16460",
+  password: "1234",
   database: "databasereg"
 });
 
