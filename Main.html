@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="ru" class>
+<head>
+  <title>Музыкальный магазин</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="content-language" content="ru">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="author" content="Eugene">
+  <meta name="description" content="Музыкальные инструменты"> 
+  <meta name="keywords" content="Гитара, барабан">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle."></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://unpkg.com/react/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom/umd/react-dom.development.js"></script>
+</head>
+
+<body>
+  <button id="themeButton"></button>
+  <nav class="mainNav z-depth-1 myBlock">
+    <div class=" z-depth-1 rounded-block nav-wrapper" style="display: flex;">
+    <div class="navbar">
+      <div class="icons">
+        <a class="" href="">
+          <svg class="iconYT icon-rounded-block" viewBox="0 0 50 50" width="52" height="52">
+            <path d="M 24.402344 9 C 17.800781 9 11.601563 9.5 8.300781 10.199219 C 6.101563 10.699219 4.199219 12.199219 3.800781 14.5 C 3.402344 16.898438 3 20.5 3 25 C 3 29.5 3.398438 33 3.898438 35.5 C 4.300781 37.699219 6.199219 39.300781 8.398438 39.800781 C 11.902344 40.5 17.898438 41 24.5 41 C 31.101563 41 37.097656 40.5 40.597656 39.800781 C 42.800781 39.300781 44.699219 37.800781 45.097656 35.5 C 45.5 33 46 29.402344 46.097656 24.902344 C 46.097656 20.402344 45.597656 16.800781 45.097656 14.300781 C 44.699219 12.101563 42.800781 10.5 40.597656 10 C 37.097656 9.5 31 9 24.402344 9 Z M 24.402344 11 C 31.601563 11 37.398438 11.597656 40.199219 12.097656 C 41.699219 12.5 42.898438 13.5 43.097656 14.800781 C 43.699219 18 44.097656 21.402344 44.097656 24.902344 C 44 29.199219 43.5 32.699219 43.097656 35.199219 C 42.800781 37.097656 40.800781 37.699219 40.199219 37.902344 C 36.597656 38.601563 30.597656 39.097656 24.597656 39.097656 C 18.597656 39.097656 12.5 38.699219 9 37.902344 C 7.5 37.5 6.300781 36.5 6.101563 35.199219 C 5.300781 32.398438 5 28.699219 5 25 C 5 20.398438 5.402344 17 5.800781 14.902344 C 6.101563 13 8.199219 12.398438 8.699219 12.199219 C 12 11.5 18.101563 11 24.402344 11 Z M 19 17 L 19 33 L 33 25 Z M 21 20.402344 L 29 25 L 21 29.597656 Z"/>
+           </svg>
+        </a>
+        <a class="iconWP iconWPanimate" href="">
+          <svg class="iconWP icon-rounded-block" width="52" height="52" viewBox="0 0 32 32">
+             <path d="M14.626,18.4c-0.256,0-0.512-0.098-0.707-0.293l-4.171-4.17c-0.188-0.188-0.293-0.442-0.293-0.707s0.105-0.52,0.293-0.707    l2.434-2.433c0.76-0.76,0.76-1.997,0-2.757l-2.78-2.78c-0.737-0.736-2.021-0.737-2.758,0c-0.044,0.044-0.093,0.084-0.145,0.12    c-0.115,0.08-2.906,2.076-2.448,6.198c0.061,0.549-0.334,1.043-0.883,1.104c-0.544,0.063-1.043-0.334-1.104-0.883    C1.51,6.114,4.713,3.505,5.291,3.078c1.497-1.436,4.051-1.412,5.524,0.06l2.78,2.78c1.54,1.54,1.54,4.045,0,5.585L11.87,13.23    l3.463,3.463c0.391,0.391,0.391,1.023,0,1.414C15.138,18.303,14.882,18.4,14.626,18.4z"/>
+             <path d="M9.76,23.266c-0.256,0-0.512-0.098-0.707-0.293c-2.457-2.457-4.296-4.855-5.467-7.128    c-0.253-0.491-0.06-1.094,0.431-1.347c0.493-0.253,1.094-0.059,1.347,0.431c1.076,2.089,2.792,4.32,5.103,6.63    c0.391,0.391,0.391,1.023,0,1.414C10.271,23.169,10.016,23.266,9.76,23.266z"/>
+             <path d="M21.992,29.982c-3.937,0-8.299-2.369-12.984-7.055c-0.391-0.391-0.391-1.023,0-1.414s1.023-0.391,1.414,0    c4.539,4.54,8.778,6.762,12.284,6.436c3.09-0.292,4.588-2.445,4.603-2.468c0.035-0.052,0.075-0.101,0.12-0.145    C27.797,24.969,28,24.478,28,23.958s-0.203-1.01-0.571-1.378l-2.78-2.781c-0.368-0.368-0.858-0.57-1.38-0.57l0,0    c-0.521,0-1.01,0.202-1.377,0.57l-2.435,2.433c-0.391,0.391-1.023,0.391-1.414,0l-4.169-4.169c-0.391-0.391-0.391-1.023,0-1.414    s1.023-0.391,1.414,0l3.462,3.462l1.727-1.726c0.745-0.746,1.736-1.157,2.792-1.157l0,0c1.056,0,2.048,0.411,2.794,1.156    l2.78,2.782C29.589,21.911,30,22.903,30,23.958c0,1.026-0.389,1.993-1.097,2.731c-0.364,0.492-2.327,2.903-6.009,3.251    C22.597,29.969,22.295,29.982,21.992,29.982z"/>
+           </svg>
+        </a>
+        <a class="iconTG" href="">
+          <svg class="icontg icon-rounded-block" viewBox="0 0 50 50" width="52" height="52">
+            <path d="M 44.376953 5.9863281 C 43.889905 6.0076957 43.415817 6.1432497 42.988281 6.3144531 C 42.565113 6.4845113 40.128883 7.5243408 36.53125 9.0625 C 32.933617 10.600659 28.256963 12.603668 23.621094 14.589844 C 14.349356 18.562196 5.2382813 22.470703 5.2382812 22.470703 L 5.3046875 22.445312 C 5.3046875 22.445312 4.7547875 22.629122 4.1972656 23.017578 C 3.9185047 23.211806 3.6186028 23.462555 3.3730469 23.828125 C 3.127491 24.193695 2.9479735 24.711788 3.015625 25.259766 C 3.2532479 27.184511 5.2480469 27.730469 5.2480469 27.730469 L 5.2558594 27.734375 L 14.158203 30.78125 C 14.385177 31.538434 16.858319 39.792923 17.402344 41.541016 C 17.702797 42.507484 17.984013 43.064995 18.277344 43.445312 C 18.424133 43.635633 18.577962 43.782915 18.748047 43.890625 C 18.815627 43.933415 18.8867 43.965525 18.957031 43.994141 C 18.958531 43.994806 18.959437 43.99348 18.960938 43.994141 C 18.969579 43.997952 18.977708 43.998295 18.986328 44.001953 L 18.962891 43.996094 C 18.979231 44.002694 18.995359 44.013801 19.011719 44.019531 C 19.043456 44.030655 19.062905 44.030268 19.103516 44.039062 C 20.123059 44.395042 20.966797 43.734375 20.966797 43.734375 L 21.001953 43.707031 L 26.470703 38.634766 L 35.345703 45.554688 L 35.457031 45.605469 C 37.010484 46.295216 38.415349 45.910403 39.193359 45.277344 C 39.97137 44.644284 40.277344 43.828125 40.277344 43.828125 L 40.310547 43.742188 L 46.832031 9.7519531 C 46.998903 8.9915162 47.022612 8.334202 46.865234 7.7402344 C 46.707857 7.1462668 46.325492 6.6299361 45.845703 6.34375 C 45.365914 6.0575639 44.864001 5.9649605 44.376953 5.9863281 z M 44.429688 8.0195312 C 44.627491 8.0103707 44.774102 8.032983 44.820312 8.0605469 C 44.866523 8.0881109 44.887272 8.0844829 44.931641 8.2519531 C 44.976011 8.419423 45.000036 8.7721605 44.878906 9.3242188 L 44.875 9.3359375 L 38.390625 43.128906 C 38.375275 43.162926 38.240151 43.475531 37.931641 43.726562 C 37.616914 43.982653 37.266874 44.182554 36.337891 43.792969 L 26.632812 36.224609 L 26.359375 36.009766 L 26.353516 36.015625 L 23.451172 33.837891 L 39.761719 14.648438 A 1.0001 1.0001 0 0 0 38.974609 13 A 1.0001 1.0001 0 0 0 38.445312 13.167969 L 14.84375 28.902344 L 5.9277344 25.849609 C 5.9277344 25.849609 5.0423771 25.356927 5 25.013672 C 4.99765 24.994652 4.9871961 25.011869 5.0332031 24.943359 C 5.0792101 24.874869 5.1948546 24.759225 5.3398438 24.658203 C 5.6298218 24.456159 5.9609375 24.333984 5.9609375 24.333984 L 5.9941406 24.322266 L 6.0273438 24.308594 C 6.0273438 24.308594 15.138894 20.399882 24.410156 16.427734 C 29.045787 14.44166 33.721617 12.440122 37.318359 10.902344 C 40.914175 9.3649615 43.512419 8.2583658 43.732422 8.1699219 C 43.982886 8.0696253 44.231884 8.0286918 44.429688 8.0195312 z M 33.613281 18.792969 L 21.244141 33.345703 L 21.238281 33.351562 A 1.0001 1.0001 0 0 0 21.183594 33.423828 A 1.0001 1.0001 0 0 0 21.128906 33.507812 A 1.0001 1.0001 0 0 0 20.998047 33.892578 A 1.0001 1.0001 0 0 0 20.998047 33.900391 L 19.386719 41.146484 C 19.35993 41.068197 19.341173 41.039555 19.3125 40.947266 L 19.3125 40.945312 C 18.800713 39.30085 16.467362 31.5161 16.144531 30.439453 L 33.613281 18.792969 z M 22.640625 35.730469 L 24.863281 37.398438 L 21.597656 40.425781 L 22.640625 35.730469 z"/>
+          </svg>
+        </a>
+        <a class="iconVK" href="">
+          <svg class="iconvkgroup icon-rounded-block" viewBox="0 0 48 48" width="52" height="52">
+             <path d="M 5.4355469 10.957031 C 3.1940971 10.957031 1.4873184 13.161086 2.1054688 15.328125 C 3.7149365 20.976871 6.1008234 26.508318 9.6621094 30.857422 C 13.223395 35.206526 18.039918 38.358951 24.199219 38.984375 C 26.249401 39.19239 28.017578 37.521139 28.017578 35.494141 L 28.017578 31.447266 C 28.017578 31.194748 28.190043 31.015308 28.386719 31.009766 C 28.423139 31.008896 28.452253 31.007813 28.470703 31.007812 C 29.178043 31.007812 30.631501 31.893981 31.908203 33.271484 C 33.184905 34.648988 34.314098 36.354273 34.857422 37.298828 L 34.857422 37.300781 C 35.472179 38.36767 36.617685 39.011719 37.835938 39.011719 L 42.708984 39.011719 C 45.135955 39.013519 46.759978 36.271923 45.572266 34.148438 C 43.707529 30.813171 39.987356 27.514403 38.126953 25.869141 C 41.535533 22.126008 43.795468 18.046772 44.796875 15.341797 C 45.552594 13.298086 43.994375 10.998047 41.796875 10.998047 L 38.318359 10.998047 C 36.806296 10.998047 35.396532 11.734785 34.820312 12.914062 C 32.113082 18.46169 29.699958 20.499254 28 21.966797 L 28 14.439453 C 28 12.561528 26.441788 11.013274 24.570312 11.009766 L 18.478516 11 C 16.538627 10.9976 15.335757 13.393494 16.498047 14.947266 L 17.673828 16.521484 L 17.675781 16.525391 C 17.877299 16.791881 17.984375 17.111197 17.984375 17.439453 L 17.984375 17.441406 L 18.007812 23.71875 C 15.584865 21.163426 12.952504 15.750557 12.158203 13.335938 L 12.158203 13.333984 C 11.694311 11.923494 10.359752 10.971123 8.8867188 10.966797 L 8.8847656 10.966797 L 5.4375 10.957031 L 5.4355469 10.957031 z M 5.4355469 13.957031 L 8.8789062 13.966797 C 9.0905592 13.967299 9.246215 14.081502 9.3085938 14.271484 C 10.294883 17.27072 12.886252 22.985249 16.171875 26.185547 C 17.025083 27.016776 18.277358 27.185277 19.248047 26.791016 C 20.218736 26.396755 21.009766 25.37501 21.009766 24.175781 L 21.009766 24.173828 L 20.984375 17.439453 C 20.984375 16.45867 20.663301 15.504844 20.074219 14.722656 L 20.072266 14.71875 L 19.535156 14.001953 L 24.564453 14.009766 C 24.827025 14.010278 25 14.181378 25 14.439453 L 25 22.042969 C 25 24.477717 28.066371 25.876634 29.910156 24.285156 L 29.912109 24.285156 C 31.602179 22.825279 34.592869 20.21974 37.515625 14.230469 C 37.583405 14.091748 37.524425 13.998047 38.318359 13.998047 L 41.796875 13.998047 C 41.999375 13.998047 42.058703 14.094497 41.982422 14.300781 C 41.131592 16.59902 38.960826 20.606819 35.742188 24.074219 C 34.750126 25.143099 34.79055 26.909155 35.912109 27.902344 C 37.670254 29.457435 41.507421 33.025544 42.953125 35.611328 C 43.085413 35.847842 42.985964 36.011922 42.710938 36.011719 L 37.835938 36.011719 C 37.668189 36.011719 37.530274 35.929849 37.457031 35.802734 C 36.807355 34.673289 35.615923 32.857918 34.109375 31.232422 C 32.602827 29.606926 30.809363 28.007812 28.470703 28.007812 C 28.404443 28.007812 28.350188 28.008705 28.308594 28.009766 L 28.304688 28.009766 L 28.302734 28.009766 C 26.44141 28.062226 25.017578 29.641784 25.017578 31.447266 L 25.017578 35.494141 C 25.017578 35.805142 24.777771 36.027985 24.501953 36 C 19.178253 35.459424 15.165636 32.844427 11.982422 28.957031 C 8.7992078 25.069635 6.5257666 19.895114 4.9902344 14.505859 C 4.9043844 14.204898 5.0889964 13.957031 5.4355469 13.957031 z"/>
+          </svg>
+        </a>
+      </div>
+      <div class="NavMainBlock">  
+        <ul id="nav-mobile" class="hide-on-med-and-down">
+          <li><a href="#" class="DM">Главная</a></li>
+          <li><a href="#" class="DM">Каталог</a></li>
+          <li><a href="#" class="DM">О нас</a></li>
+          <li><a href="#" class="DM">Контакты</a></li>
+        </ul>
+      </div>
+      <div class=" container-sm">
+        <a>
+          <svg class="icon circle modal-trigger" data-target="cartModal" height="36" width="36" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+            <path d="M23.52,29h-15a5.48,5.48,0,0,1-5.31-6.83L6.25,9.76a1,1,0,0,1,1-.76H24a1,1,0,0,1,1,.7l3.78,12.16a5.49,5.49,0,0,1-.83,4.91A5.41,5.41,0,0,1,23.52,29ZM8,11,5.11,22.65A3.5,3.5,0,0,0,8.48,27h15a3.44,3.44,0,0,0,2.79-1.42,3.5,3.5,0,0,0,.53-3.13L23.28,11Z"/>
+            <path d="M20,17a1,1,0,0,1-1-1V8a3,3,0,0,0-6,0v8a1,1,0,0,1-2,0V8A5,5,0,0,1,21,8v8A1,1,0,0,1,20,17Z"/>
+          </svg>
+        <span class="header__cart-amount counter modal-trigger" data-target="cartModal" id="counter">0</span>
+        </a>         
+        <span class="">
+          <div class="header__cart-reg_login">
+            <div class="row btn-flat">
+              <button class="DM btn waves-effect waves-light modal-trigger carder" href="#registration-modal">Регистрация</button>
+            </div>
+            <div class="row btn-flat">
+              <button class="DM btn waves-effect waves-light modal-trigger carder" href="#login-modal">Авторизация</button>
+            </div>
+          </div>
+        </span>
+      </div>
+    </div>
+    </div>   
+          <div id="registration-modal" class="modal registration-modal">
+            <div class="modal-content">
+              <h4>Регистрация</h4>
+                <div class="row">
+                  <form action="submit" method="post" class="col s12">
+                    <div class="row">
+                      <div class="input-field col s6 registration-modal-text rounded-block-aside">
+                        <input id="first-name" type="text" class="validate" name="first-name" required>
+                        <label for="first-name">Имя</label>
+                      </div>
+                      <div class="input-field col s6 registration-modal-text rounded-block-aside">
+                        <input id="last-name" type="text" class="validate" name="last-name" required>
+                        <label for="last-name">Фамилия</label>
+                      </div>
+                    </div>
+                      <div class="row">
+                        <div class="input-field col s6 registration-modal-text rounded-block-aside">
+                          <input id="phone" type="tel" class="validate" name="phone" required autocomplete>
+                          <label for="phone">Телефон</label>
+                        </div>
+                        <div class="input-field col s6 registration-modal-text rounded-block-aside">
+                          <input id="email" type="email" class="validate" name="email" required autocomplete>
+                          <label for="email">Email</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="input-field col s6 registration-modal-text rounded-block-aside">
+                          <input id="password" type="password" class="validate" name="password" required>
+                          <label for="password">Пароль</label>
+                        </div>
+                        <div class="input-field col s6 registration-modal-text rounded-block-aside">
+                          <input id="confirm-password" type="password" class="validate" name="confirm-password" oninput="checkPasswordMatch()" required>
+                          <label for="confirm-password">Подтвердите пароль</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="input-field col s6 registration-modal-text rounded-block-aside">
+                          <input id="birthdate" type="text" class="datepicker" name="birthdate" required>
+                          <label for="birthdate">Дата рождения</label>
+                        </div>
+                        <div class="input-field col s6 registration-modal-text rounded-block-aside">
+                          <input id="region" type="text" class="validate" name="region">
+                          <label for="region">Регион</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col s12">
+                          <button id="registration-button" class="btn waves-effect waves-light" type="button" name="action">Регистрация</button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+
+              <div id="login-modal" class="modal login-modal">
+                <div class="modal-content">
+                  <h4>Авторизация</h4>
+                  <div class="row">
+                    <form class="col s12">
+                      <div class="row">
+                        <div class="input-field col s12 login-modal-text rounded-block-aside">
+                          <input id="login-email" type="email" class="validate">
+                          <label for="login-email">Email</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="input-field col s12 login-modal-text rounded-block-aside">
+                          <input id="login-password" type="password" class="validate">
+                          <label for="login-password">Пароль</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col s12">
+                          <button class="btn waves-effect waves-light" type="submit" name="action">Авторизация</button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            
+              <script>
+               
+              </script>
+            </span>
+          </div>
+        </div>
+        <div id="cartModal" class="modal custom-modal">
+          <div class="modal-content">
+            <div class="close">
+              <a href="#close" class="modal-close waves-effect waves-green btn-flat">x</a>
+            </div>
+            <h3 class="center-align">Ваши товары</h3>
+          </div>
+          <ul id="destinationBlock" class="black-text">
+          </ul>
+        </div>
+    </nav>
+
+    <div class="containerr">
+      <aside class="sidebar-left_size sidebar-left ">
+        <div>
+          <ul>
+            <li class="rounded-block-aside category center-align blockcolor"> <a href="#"class="white-text">Каталог</a></li>
+          </ul>
+          <iframe class="blockcolor z-depth-1 rounded-block-aside sidebar-left-category" width="100%" src="Category/Category.html"></iframe>
+        </div>
+      </aside>
+      <main>
+        <form class="maincontext">
+          <div class="input-field rounded-block blockcolor" style="position: relative; margin-top: 1rem;margin-bottom: 1rem;">
+            <input id="search" class="searchBlock" type="search" required>
+            <label for="autocomplete-input" class="white-text searchtext search">Найти</label>
+            <i class="material-icons">close</i>
+          </div>
+        </form>
+        <div class="image-container carousel hoverable z-depth-1 rounded-block imagemain" > 
+          <img id="image1" class="carousel-item responsive-img" href="#one!" src="guitar1.jpg" alt="Второе изображение">
+          <img id="image2" class="carousel-item responsive-img" href="#two!" src="guitar2.jpeg" alt="Первое изображение">          
+        </div>
+        <div class="swiper-pagination js-main-pagination swiper-pagination-clickable swiper-pagination-bullets">
+        </div>
+      </main>
+      <aside class="sidebar_size sidebar-right">
+      </aside>
+    </div>
+    <div class="container-list blockcolor" id="block1" style="border-radius: 15px;">
+      <main class="compilation z-depth-1 rounded-block">
+          <section>
+            <h2 class="center card white-text" style="border-radius: 10px; background-color: #617087; font-family: 'DM Serif Display', serif; font-size: 60px; padding-bottom: 10px;">
+              Список товаров
+            </h2>
+            <div class="DM" >
+              <div class="row flex">
+                <div class="col s12 m6 l4">
+                  <div class="card BoxItemRecommended" style="border-radius: 25px;">
+                    <div class="card-image">
+                      <img id="image1-list" src="instrument buy/ind_img_kit_os_l_18a19a90c532ddd189ca72fdd0d7d29c.avif">
+                    </div>
+                    <div class="card-content white-text" style="border-radius: 0 0 20px 20px;">
+                      <span class="center card-title text-lighten-3" style="background-color: inherit; border-radius: 0 0 20px 20px; font-size: xx-large;">Акустическая ударная установка <br> Pearl DMP925S/C</span>
+                      <p style="word-break: break-all;">Акустическая ударная установка. Набор из бас-барабана (22"), малого барабана (14"), подвесных томов (10" и 12") и напольного тома (14"). Корпуса из клена толщиной 5.4 мм, пластики Remo, матовое покрытие. Хромированные обода, толщина 1.6 мм, тройные фланцы. В комплекте держатели для томов TH-900I, педаль для бас-бочки и набор стоек Hardware Pack 830.
+                      </p>
+                    </div>
+                    <div class="copypastCard list-product" style="border-radius: 20px 20px 0 0">
+                      <a href="#" class="linktext">Подробнее</a>
+                      <a href="#" class="linktext right">Добавить в корзину</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col s12 m6 l4">
+                  <div class="card BoxItemRecommended" style="border-radius: 25px;">
+                    <div class="card-image" style="margin: auto; width: 50%;">
+                      <img src="instrument buy/orig.webp">
+                    </div>
+                    <div class="card-content white-text" style="border-radius: 0 0 20px 20px; ">
+                      <span class="center card-title" style="border-radius: 0 0 20px 20px; font-size: xx-large;">FFG-1038BK Акустическая гитара, черная, с вырезом, Foix</span>
+                      <p style="word-break: break-all;">FFG-1038BK Акустическая гитара, черная, с вырезом, Foix
+                        Форма корпуса: дредноут, с вырезом.
+                        Верхняя дека: липа.
+                        Задняя дека и обечайка: липа.
+                        Гриф без анкерного стержня.
+                        Накладка грифа: пластик АБС.
+                        Бридж: пластик АБС.
+                        Цвет: черный.</p>
+                    </div>
+                    <div class="copypastCard list-product" style="border-radius: 20px 20px 0 0; position: absolute; bottom: 22px; width: 100%;">
+                      <a href="#" class="linktext">Подробнее</a>
+                      <a href="#" class="linktext right">Добавить в корзину</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col s12 m6 l4">
+                  <div class="card BoxItemRecommended" style="border-radius: 25px;">
+                    <div class="card-image">
+                      <img src="product3.jpg">
+                    </div>
+                    <div class="card-content">
+                      <span class="card-title">Товар 3</span>
+                      <p>Описание товара 3</p>
+                    </div>
+                    <div class="copypastCard list-product" style="border-radius: 20px 20px 0 0; position: absolute; bottom: 22px; width: 100%;">
+                      <a href="#" class="linktext">Подробнее</a>
+                      <a href="#" class="linktext right">Добавить в корзину</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product sidebarforcontent card hoverable hide" id="productBlock" style="display: none;">
+              <div class="sidebarforcontent">
+                  <img class="materialboxed" width="650" src="68af8505f6394d8114e27cfb5fd80b1a.jpg" alt="Гитара">
+                </a>
+                <h3 class="">Акустическая гитара</h3>
+              </div>
+              <div class="sidebarforcontent1">
+                <p>Цена: $200</p>
+                <button class="btn-small waves-effect waves-light add-to-cart-button green" data-item="Акустическая гитара" onclick="addToCart(this)">купить</button>                        
+                <button class="btn-small waves-effect waves-light remove-button red" onclick="removeFromCart(event)">убрать</button>                        
+              </div>
+            </div>
+            <div class="product sidebarforcontent card" id="sourceBlock" style="display: none;">
+              <div class="sidebarforcontent">
+                <img src="instrument buy/ind_img_kit_os_l_18a19a90c532ddd189ca72fdd0d7d29c.avif" alt="Ударные инструменты">
+                <h3>Ударные инструменты</h3>
+              </div>
+              <div class="sidebarforcontent1">
+                <p>Цена: $400</p>
+                <button class="btn-small waves-effect waves-light green add-to-cart-button" id="buy-button" onclick="increment(), moveToDestination(this)">Купить</button>
+                <button class="btn-small waves-effect waves-light red moveContentBtn" id="removebutton" onclick="decrement(), moveToDestination(this)">Убрать</button>
+              </div>
+            </div>
+            </div>
+          </section>
+        </main>
+  </div>
+    <footer class="page-footer" style="background-color: #1b2c3f">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Доп инфа</h5>
+            <p class="grey-text text-lighten-4">музторг
+            </p>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">Источники</h5>
+            <ul>
+              <li><a class="grey-text text-lighten-3" href="#!">F</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">F</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Адрес</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Номер телефона</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+          © 2023 Музыкальный магазин. Все права защищены.
+        <a class="" href="#!">F</a>
+        </div>
+      </div>
+    </div>
+    </footer>
+  <script src="DataBase/registration.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+  </body>
+  </html>

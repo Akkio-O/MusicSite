@@ -1,0 +1,244 @@
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+}
+
+.item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.buy-button {
+  background-color: #4CAF50;
+  color: white;
+  
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+}
+
+#cart-items {
+  list-style-type: none;
+  padding: 0;
+}
+
+.arrowButton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #ffffff; /* Цвет стрелки */
+  padding: 0; /* Удаление отступов */
+}
+
+.arrowButton:hover {
+  color: #cccccc; /* Изменение цвета при наведении */
+}
+
+.slide-in {
+  animation: slideIn 0.5s forwards; /* Анимация для перемещения */
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%); /* Начальное положение */
+  }
+  to {
+    transform: translateX(0); /* Конечное положение */
+  }
+}
+
+/*.image-button1 {
+  position: absolute;
+  top: 700%;
+  left: 8%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/*.image-container img {
+  display: block;
+  z-index: 1;
+  position: relative;
+  left: 37%;
+  opacity: 1; /* Скрываем второе изображение
+  transition: opacity 0.5s ease; /* Добавляем переход с плавностью
+}
+
+.image-container img:target {
+  opacity: 1;
+}
+
+/*.image-container img:first-child {
+  opacity: 1; /* Показываем первое изображение по умолчанию
+}
+
+.image-button2 {
+  position: relative;
+  top: 700%;
+  left: 92.3%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}*/
+
+.sidebar {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+  background-color: #f2f2f2;
+  width: 400px;
+  display: block;
+  margin-top: 10px;
+  padding: 5px 50px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.sidebar_size {
+  font-family:system-ui;
+  font-size: 150%;
+}
+
+.sidebar_padding {
+  margin-bottom: 50px;
+  padding-bottom: 10px;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar li {
+  margin-bottom: 10px;
+}
+
+.sidebar a {
+  color: #333;
+  text-decoration: none;
+}
+
+main {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.block {
+  position: relative;
+  display: inline-block;
+  padding-right: 20px; /* Отступ справа для размещения иконки */
+}
+
+.icon {
+  position: absolute;
+  top: 138px;
+  right: 250px;
+  transform: translateY(-50%);
+  font-size: 24px;
+  fill: rgb(255, 255, 255);
+}
+
+.header__cart-text {
+  color: inherit
+}
+
+.header__cart-amount {
+font: 14px/1.5 Roboto,sans-serif;
+text-size-adjust: 100%;
+box-sizing: border-box;
+background: #3a64a2;
+color: #fff;
+font-size: 10px;
+line-height: 1;
+font-weight: 600;
+padding: 3px 5px 2px;
+border-radius: 50%;
+position: absolute;
+top: 137px;
+right: 250px;
+z-index: 1;
+}
+
+nav {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.product {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.product img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.buy-btn {
+  display: block;
+  margin-top: 10px;
+  background-color: #333;
+  color: #fff;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+}
+
+footer {
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+}

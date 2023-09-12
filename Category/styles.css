@@ -1,0 +1,20 @@
+:root {
+    --background-color: black; /* Значение по умолчанию */
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --background-color: black; /* Цвет для темной темы */
+    }
+  }
+  
+  @media (prefers-color-scheme: light) {
+    :root {
+      --background-color: rgb(255, 255, 255); /* Цвет для светлой темы */
+    }
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
